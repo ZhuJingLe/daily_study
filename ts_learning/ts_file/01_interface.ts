@@ -158,3 +158,9 @@ interface Mix{
     但并没有提供具体实现一样。 接口同样会继承到类的private和protected成员。 
     这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，这个接口类型只能被这个类或其子类所实现（implement）。
 */
+class Cons {
+    private state:string; // 子类才能继承该属性
+}
+interface Inter extends Cons {
+    select();
+}
