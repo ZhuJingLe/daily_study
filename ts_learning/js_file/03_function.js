@@ -72,3 +72,4 @@ var fun = personObj.printInfo();
 var val = fun();
 console.log(val);
 // this 参数
+// 函数重载：根据传入函数的参数不同 返回不一样的值
